@@ -9,7 +9,7 @@ https://github.com/wesbos/JavaScript30
 ## 以下為已完成的練習筆記和 Demo 列表
 | No | 主題 | 筆記 | DEMO |
 | --- | --- | --- | --- |
-| 01 | JavaScript Drum Kit |  |  |
+| 01 | JavaScript Drum Kit | [筆記](https://a90100.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit) | [DEMO](https://a90100.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-Harry.html) |
 | 02 | JS and CSS Clock |  |  |
 | 03 | CSS Variables |  |  |
 | 04 | Array Cardio Day 1 |  |  |
