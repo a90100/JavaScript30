@@ -11,9 +11,9 @@ https://github.com/wesbos/JavaScript30
 | No | 主題 | 筆記 | DEMO |
 | --- | --- | --- | --- |
 | 01 | JavaScript Drum Kit | [筆記](https://github.com/a90100/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) | [DEMO](https://a90100.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-Harry.html) |
-| 02 | JS and CSS Clock |  |  |
-| 03 | CSS Variables |  |  |
-| 04 | Array Cardio Day 1 |  |  |
+| 02 | JS and CSS Clock | [筆記](https://github.com/a90100/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock) | [DEMO](https://a90100.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/index-Harry.html) |
+| 03 | CSS Variables | [筆記](https://github.com/a90100/JavaScript30/tree/master/03%20-%20CSS%20Variables) | [DEMO](https://a90100.github.io/JavaScript30/03%20-%20CSS%20Variables/index-Harry.html) |
+| 04 | Array Cardio Day 1 | [筆記](https://github.com/a90100/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [DEMO](https://a90100.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-Harry.html) |
 | 05 | Flex Panel Gallery |  |  |
 | 06 | Type Ahead |  |  |
 | 07 | Array Cardio Day 2 |  |  |
