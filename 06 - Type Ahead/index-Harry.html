@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <form class="search-form">
     <input type="text" class="search" placeholder="City or State">
     <ul class="suggestions">
@@ -19,6 +18,44 @@
   <script>
     const endpoint =
       'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+    // 取得資料
+    let cities = [];
+    fetch(endpoint).then(res => res.json()).then(data => cities = data);
+
+    // 尋找符合的資料
+    function matchCities(searchCity, cities) {
+      const regex = new RegExp(searchCity, 'gi');
+      return cities.filter(place => {
+        return place.city.match(regex) || place.state.match(regex);
+      })
+    }
+
+    // 將符合的資料加入 html
+    function addSuggestions() {
+      const filteredCities = matchCities(this.value, cities);
+      const addHtml = filteredCities.map(place => {
+        // 將符合搜尋字串的部分做強調色
+        const regex = new RegExp(this.value, 'gi');
+        const cityName = place.city.replace(regex, `<span class="h1">${this.value}</span>`);
+        const stateName = place.state.replace(regex, `<span class="h1">${this.value}</span>`);
+
+        return `<li>
+          <span class="name">${cityName}, ${stateName}</span>
+          <span class="population">${addCommas(place.population)}</span>
+        </li>`
+      }).join('');
+      suggestions.innerHTML = addHtml;
+    }
+
+    function addCommas(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    const search = document.querySelector('.search');
+    const suggestions = document.querySelector('.suggestions');
+
+    search.addEventListener('input', addSuggestions);
   </script>
 </body>
 

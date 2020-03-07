@@ -51,12 +51,8 @@
       border-left: 1px solid #D1E2FF;
     }
   </style>
-  <!--
-   The following is a common layout you would see in an email client.
-
-   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.
-
-  -->
+  <!-- The following is a common layout you would see in an email client.
+  When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.-->
   <div class="inbox">
     <div class="item">
       <input type="checkbox">
@@ -97,6 +93,29 @@
   </div>
 
   <script>
+    const checkboxs = document.querySelectorAll('input[type="checkbox"]');
+    let lastCheck;
+    checkboxs.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
+    function handleCheck(e) {
+      let isBetween = false; // 用於判斷是否在兩個已點選的 checkbox 之間的變數
+
+      if (e.shiftKey && e.target.checked) {
+        checkboxs.forEach(checkbox => {
+          // 假如目前遍歷到的 checkbox 是剛好點選的 checkbox 或是上一個點選的 checkbox，就將 isBetween 變成 true
+          // 直到碰到剛好點選的 checkbox 或是上一個點選的 checkbox，就變 false，只要 isBetween 變成 true，就自動做勾選
+          if (checkbox === e.target || checkbox === lastCheck) {
+            isBetween = !isBetween;
+          }
+
+          if (isBetween) {
+            checkbox.checked = true;
+          }
+        });
+      }
+
+      lastCheck = e.target;
+    }
   </script>
 </body>
 
