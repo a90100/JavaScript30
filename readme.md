@@ -14,12 +14,12 @@ https://github.com/wesbos/JavaScript30
 | 02 | JS and CSS Clock | [筆記](https://github.com/a90100/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock) | [DEMO](https://a90100.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/index-Harry.html) |
 | 03 | CSS Variables | [筆記](https://github.com/a90100/JavaScript30/tree/master/03%20-%20CSS%20Variables) | [DEMO](https://a90100.github.io/JavaScript30/03%20-%20CSS%20Variables/index-Harry.html) |
 | 04 | Array Cardio Day 1 | [筆記](https://github.com/a90100/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [DEMO](https://a90100.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-Harry.html) |
-| 05 | Flex Panel Gallery |  |  |
-| 06 | Type Ahead |  |  |
-| 07 | Array Cardio Day 2 |  |  |
-| 08 | Fun with HTML5 Canvas |  |  |
-| 09 | Dev Tools Domination |  |  |
-| 10 | Hold Shift and Check Checkboxes |  |  |
+| 05 | Flex Panel Gallery | N/A | [DEMO](https://a90100.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-Harry.html) |
+| 06 | Type Ahead | [筆記](https://github.com/a90100/JavaScript30/tree/master/06%20-%20Type%20Ahead) | [DEMO](https://a90100.github.io/JavaScript30/06%20-%20Type%20Ahead/index-Harry.html) |
+| 07 | Array Cardio Day 2 | N/A | [DEMO](https://a90100.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-Harry.html) |
+| 08 | Fun with HTML5 Canvas | [筆記](https://github.com/a90100/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [DEMO](https://a90100.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-Harry.html) |
+| 09 | Dev Tools Domination | [筆記](https://github.com/a90100/JavaScript30/tree/master/09%20-%20Dev%20Tools%20Domination) |[DEMO](https://a90100.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/index-Harry.html)  |
+| 10 | Hold Shift and Check Checkboxes | N/A | [DEMO](https://a90100.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-Harry.html) |
 | 11 | Custom Video Player |  |  |
 | 12 | Key Sequence Detection |  |  |
 | 13 | Slide in on Scroll |  |  |
