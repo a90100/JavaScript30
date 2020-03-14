@@ -10,8 +10,7 @@
 <body>
   <!--
       Fish SVG Cred:
-      https://thenounproject.com/search/?q=fish&i=589236
-   -->
+      https://thenounproject.com/search/?q=fish&i=589236 -->
 
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
     viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
@@ -45,7 +44,46 @@
   <script>
     const addItems = document.querySelector('.add-items');
     const itemsList = document.querySelector('.plates');
-    const items = [];
+    const items = JSON.parse(localStorage.getItem('items')) || [];
+
+    // 加入列表
+    function addToList(e) {
+      e.preventDefault();
+      const text = document.querySelector('[name=item]').value;
+      const item = {
+        text,
+        done: false
+      }
+
+      items.push(item);
+      showList(items, itemsList);
+      localStorage.setItem('items', JSON.stringify(items));
+      this.reset(); // 清空表單值
+    }
+
+    // 渲染畫面
+    function showList(itemsArr = [], addPlace) {
+      addPlace.innerHTML = itemsArr.map((item, i) => {
+        return `<li>
+          <input type="checkbox" data-index=${i} id=item${i} ${item.done ? 'checked' : ''}>
+          <label for="item${i}">${item.text}</label>
+        </li>`;
+      }).join('');
+    }
+
+    function toggleDone(e) {
+      // 想法: 取 item 索引並修改該 item 的 done
+      if (e.target.matches('input')) {
+        const index = e.target.dataset.index;
+        items[index].done = !items[index].done;
+        localStorage.setItem('items', JSON.stringify(items));
+        showList(items, itemsList);
+      }
+    }
+
+    addItems.addEventListener('submit', addToList);
+    itemsList.addEventListener('click', toggleDone);
+    showList(items, itemsList);
   </script>
 
 

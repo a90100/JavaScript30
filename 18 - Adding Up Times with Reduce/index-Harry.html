@@ -184,6 +184,18 @@
     </li>
   </ul>
   <script>
+    const time = Array.from(document.querySelectorAll('[data-time]'));
+
+    let totalSeconds = time.map(element => element.dataset.time).map(element => {
+      const [minute, second] = element.split(":");
+      return parseInt(minute) * 60 + parseInt(second);
+    }).reduce((total, current) => total + current);
+    
+    let hours = Math.floor(totalSeconds / 3600);
+    totalSeconds %= 3600;
+    let minutes = Math.floor(totalSeconds / 60);
+    totalSeconds %= 60;
+    console.log(hours, minutes, totalSeconds);
   </script>
 </body>
 

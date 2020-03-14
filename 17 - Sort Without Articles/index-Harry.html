@@ -51,6 +51,13 @@
       'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive',
       'Anywhere But Here', 'An Old Dog'
     ];
+
+    // a, the, an 後面加空白是為了取到單純這幾個單字，不然例如 anywhere 也會被替換掉 an 的部分
+    const filterWords = (words) => words.replace(/^(a |the |an )/i, '').trim();
+
+    const sortedBands = bands.sort(((a, b) => filterWords(a) > filterWords(b) ? 1 : -1));
+    document.getElementById('bands').innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
+    
   </script>
 
 </body>

@@ -9,6 +9,20 @@
 
 <body>
   <script>
+    const pressed = [],
+          secretCode = 'wesbos';
+
+    window.addEventListener('keyup', (e) => {
+      console.log(e.key);
+      pressed.push(e.key);
+      // 第一個參數是負的話，從陣列後面開始數(-1 為陣列最後一個數)
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+      console.log(pressed);
+      if(pressed.join('').includes(secretCode)) {
+        console.log('DING DING!');
+        cornify_add();
+      }
+    })
   </script>
 </body>
 
