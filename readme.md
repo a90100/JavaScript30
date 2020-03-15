@@ -26,7 +26,7 @@ https://github.com/wesbos/JavaScript30
 | 14 | JavaScript References VS Copying | [筆記](https://github.com/a90100/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | [DEMO](https://a90100.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index-Harry.html) |
 | 15 | LocalStorage | [筆記](https://github.com/a90100/JavaScript30/tree/master/15%20-%20LocalStorage) | [DEMO](https://a90100.github.io/JavaScript30/15%20-%20LocalStorage/index-Harry.html) |
 | 16 | Mouse Move Shadow | [筆記](https://github.com/a90100/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow) | [DEMO](https://a90100.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-Harry.html) |
-| 17 | Sort Without Articles | N/A | [DEMO](https://a90100.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-Harry.html) |
+| 17 | Sort Without Articles | N/A | [DEMO](https://a90100.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index-Harry.html) |
 | 18 | Adding Up Times with Reduce | N/A | [DEMO](https://a90100.github.io/JavaScript30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index-Harry.html) |
 | 19 | Webcam Fun | [筆記](https://github.com/a90100/JavaScript30/tree/master/19%20-%20Webcam%20Fun) | [DEMO](https://a90100.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html) |
 | 20 | Speech Detection |  |  |
