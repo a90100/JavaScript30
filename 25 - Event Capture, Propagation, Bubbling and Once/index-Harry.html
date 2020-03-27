@@ -4,17 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Understanding JavaScript's Capture</title>
-</head>
-
-<body class="bod">
-
-  <div class="one">
-    <div class="two">
-      <div class="three">
-      </div>
-    </div>
-  </div>
-
   <style>
     html {
       box-sizing: border-box;
@@ -43,10 +32,28 @@
       background: coral;
     }
   </style>
+</head>
+
+<body class="bod">
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
 
   <button></button>
   <script>
+    const divs = document.querySelectorAll('div');
+    const button = document.querySelector('button');
 
+x
+
+    button.addEventListener('click', () => {
+      console.log('Click!!!');
+    }, {
+      once: true
+    })
   </script>
 </body>
 

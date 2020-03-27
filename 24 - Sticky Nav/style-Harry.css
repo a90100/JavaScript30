@@ -10,9 +10,7 @@ body {
   margin: 0;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -25,6 +23,10 @@ body {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
   transition: transform 0.5s;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
 }
 
 header {
@@ -50,6 +52,11 @@ nav {
   transition: all 0.5s;
   position: relative;
   z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -78,6 +85,10 @@ li.logo {
 
 li.logo a {
   color: black;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
 }
 
 nav a {

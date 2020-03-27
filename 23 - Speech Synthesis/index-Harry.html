@@ -37,6 +37,42 @@
     const options = document.querySelectorAll('[type="range"], [name="text"]');
     const speakButton = document.querySelector('#speak');
     const stopButton = document.querySelector('#stop');
+    // 預設 msg 物件的 text 值
+    msg.text = document.querySelector('[name="text"]');
+
+    // 取得下拉選單出現的語言
+    function populateVoices() {
+      voices = this.getVoices();
+      voicesDropdown.innerHTML = voices.filter(voice => voice.lang.includes('en'))
+        .map(voice => `<option value="${voice.name}">${voice.name} (${voice.value})</option>`).join('');
+    }
+
+    function setVoice() {
+      msg.voice = voices.find(voice => voice.name === this.value);
+      toggle();
+    }
+
+    function toggle(startOver = true) {
+      speechSynthesis.cancel();
+      if (startOver) {
+        speechSynthesis.speak(msg);
+      }
+    }
+
+    function setOption() {
+      msg[this.name] = this.value;
+      toggle();
+    }
+
+    speechSynthesis.addEventListener('voiceschanged', populateVoices);
+    voicesDropdown.addEventListener('change', setVoice);
+    options.forEach(option => option.addEventListener('change', setOption));
+    speakButton.addEventListener('click', toggle);
+
+    // 兩者結果相同
+    // 用 bind 會建立一個新函式，帶入 null 去忽略 this，false 變成 toggle 的第一個參數
+    // stopButton.addEventListener('click', toggle.bind(null, false));
+    stopButton.addEventListener('click', () => toggle(false));
   </script>
 
 </body>
