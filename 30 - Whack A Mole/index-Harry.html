@@ -38,6 +38,56 @@
     const holes = document.querySelectorAll('.hole');
     const scoreBoard = document.querySelector('.score');
     const moles = document.querySelectorAll('.mole');
+    let lastHole,
+      timeUp = false,
+      score = 0;
+
+    // 地鼠出現在地面的時間
+    function randomTime(min, max) {
+      return Math.round(Math.random() * (max - min) + min);
+    }
+
+    // 隨機一個地鼠出現
+    function randomHole(holes) {
+      const id = Math.floor(Math.random() * holes.length),
+          hole = holes[id];
+
+      if(hole === lastHole) {
+        return randomHole(holes);
+      }
+      lastHole = hole;
+      return hole;
+    }
+
+    // 控制出現地鼠
+    function peep() {
+      const time = randomTime(200, 1000);
+      const hole = randomHole(holes);
+      hole.classList.add('up');
+      setTimeout(() => {
+        hole.classList.remove('up');
+        if(!timeUp) peep();
+      }, time);
+    }
+
+    // 開始遊戲
+    function startGame() {
+      scoreBoard.textContent = 0;
+      score = 0;
+      timeUp = false;
+      peep();
+      setTimeout(() => { timeUp = true }, 10000);
+    }
+
+    // 點到地鼠加分
+    function bonk(e) {
+      if(!e.isTrusted) return;
+      this.parentNode.classList.remove('up');
+      score++;
+      scoreBoard.textContent = score;
+    }
+
+    moles.forEach(mole => mole.addEventListener('click',bonk));
   </script>
 </body>
 

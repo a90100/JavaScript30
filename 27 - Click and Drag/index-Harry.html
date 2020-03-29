@@ -37,6 +37,37 @@
   </div>
 
   <script>
+    const slider = document.querySelector('.items');
+    let isDown = false,
+      startX,
+      scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active')
+      // 設定目前頁面距離
+      startX = e.clientX - slider.offsetLeft;;
+      // 設定卷軸左距
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    })
+
+    slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.clientX;
+      const walkDistance = (x - startX) * 3;
+      slider.scrollLeft = scrollLeft - walkDistance;
+    })
   </script>
 
 </body>

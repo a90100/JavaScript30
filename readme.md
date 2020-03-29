@@ -29,14 +29,14 @@ https://github.com/wesbos/JavaScript30
 | 17 | Sort Without Articles | N/A | [DEMO](https://a90100.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index-Harry.html) |
 | 18 | Adding Up Times with Reduce | N/A | [DEMO](https://a90100.github.io/JavaScript30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index-Harry.html) |
 | 19 | Webcam Fun | [筆記](https://github.com/a90100/JavaScript30/tree/master/19%20-%20Webcam%20Fun) | [DEMO](https://a90100.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html) |
-| 20 | Speech Detection |  |  |
-| 21 | Geolocation |  |  |
-| 22 | Follow Along Link Highlighter |  |   |
-| 23 | Speech Synthesis |  |  |
-| 24 | Sticky Nav |  |  |
-| 25 | Event Capture, Propagation, Bubbling and Once |  |  |
-| 26 | Stripe Follow Along Nav |  |  |
-| 27 | Click and Drag |  |  |
-| 28 | Video Speed Controller |  |  |
-| 29 | Countdown Timer |  |  |
-| 30 | Whack A Mole  |  |  |
+| 20 | Speech Detection | [筆記](https://github.com/a90100/JavaScript30/tree/master/20%20-%20Speech%20Detection) | [DEMO](https://a90100.github.io/JavaScript30/20%20-%20Speech%20Detection/index-Harry.html) |
+| 21 | Geolocation | [筆記](https://github.com/a90100/JavaScript30/tree/master/21%20-%20Geolocation) | [DEMO](https://a90100.github.io/JavaScript30/21%20-%20Geolocation/index-Harry.html) |
+| 22 | Follow Along Link Highlighter | [筆記](https://github.com/a90100/JavaScript30/tree/master/22%20-%20Follow%20Along%20Link%20Highlighter) |  [DEMO](https://a90100.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/index-Harry.html) |
+| 23 | Speech Synthesis | [筆記](https://github.com/a90100/JavaScript30/tree/master/23%20-%20Speech%20Synthesis) | [DEMO](https://a90100.github.io/JavaScript30/23%20-%20Speech%20Synthesis/index-Harry.html) |
+| 24 | Sticky Nav | N/A | [DEMO](https://a90100.github.io/JavaScript30/24%20-%20Sticky%20Nav/index-Harry.html) |
+| 25 | Event Capture, Propagation, Bubbling and Once | N/A | [DEMO](https://a90100.github.io/JavaScript30/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/index-Harry.html) |
+| 26 | Stripe Follow Along Nav | N/A | [DEMO]() |
+| 27 | Click and Drag | [筆記]() | [DEMO]() |
+| 28 | Video Speed Controller | N/A | [DEMO]() |
+| 29 | Countdown Timer | [筆記]() | [DEMO]() |
+| 30 | Whack A Mole  |  | [DEMO]() |
